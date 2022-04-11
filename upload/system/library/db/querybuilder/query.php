@@ -37,7 +37,7 @@ class Query {
 
         $tmp = explode(' ', $table);
 
-        $table = DB_PREFIX . $tmp[0];
+        $table = WRITEDB_PREFIX . $tmp[0];
 
         if(count($tmp) == 1) {
             $alias = $table;
